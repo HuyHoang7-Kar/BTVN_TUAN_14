@@ -11,7 +11,10 @@ typedef struct Tnode {
 
 // Định nghĩa kiểu mới để dễ sử dụng
 typedef struct Tnode treeNode;
-
+// Kiểm tra xem cây rỗng không
+int isTreeEmpty(treeNode* root) {
+    return root == NULL;
+}
 // Hàm tạo một nút mới
 treeNode* makeTree(const char *c) {
     treeNode *newNode = (treeNode *)malloc(sizeof(treeNode));
